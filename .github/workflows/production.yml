@@ -1,4 +1,4 @@
-name: Good Deal NextJs
+name: Coffee shop react native
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
 
         # run test
       - name: Code Standard
-        run: eslint --ext .tsx --ext .ts src/ --fix
+        run: yarn run lint-production
 
       # build the react app
       - name: Build
