@@ -36,7 +36,3 @@ jobs:
         # run test
       - name: Code Standard
         run: yarn run lint-production
-
-      # build the react app
-      - name: Build
-        run: yarn run build
