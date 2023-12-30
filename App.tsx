@@ -1,13 +1,29 @@
-import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import HomeScreen from "./src/screen/Home";
+import OnBoardingScreen from "./src/screen/OnBoardingScreen";
+import { OnboardFlow } from "react-native-onboard";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>This is our new coffee shop aplication</Text>
-      <StatusBar style="auto" />
-    </View>
+    <OnboardFlow
+      pages={[
+        {
+          title: "Welcome to my app",
+          subtitle: "This is page 1",
+          imageUri: "",
+          primaryButtonTitle: "this is fahim",
+        },
+      ]}
+      type={"fullscreen"}
+      backgroundImageUri="https://i.ibb.co/M8qykdm/onboarding.png"
+    />
   );
 }
 
