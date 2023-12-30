@@ -1,6 +1,5 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 const HomeScreen = () => {
   return (
@@ -26,5 +25,5 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  homeContainer: { width: "90%", margin: "auto", textAlign: "center" },
+  homeContainer: { width: '90%', margin: 'auto', textAlign: 'center' },
 });

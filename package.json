@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "postinstall": "husky install",
-    "lint": "eslint --ext .tsx --ext .ts src/ --fix"
+    "lint": "eslint --ext .tsx --ext .ts src/ app.tsx --fix"
   },
   "dependencies": {
     "expo": "~49.0.15",
