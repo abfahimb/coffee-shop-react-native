@@ -34,8 +34,8 @@ jobs:
         run: yarn install
 
         # run test
-      - name: Install dependencies
-        run: yarn lint
+      - name: Code Standard
+        run: eslint --ext .tsx --ext .ts src/ --fix
 
       # build the react app
       - name: Build
